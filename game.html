@@ -11,6 +11,12 @@
             flex-direction: column;
             align-items: center;
             background-color: #d5d1d1;
+            background-image: url("https://kslsports.com/wp-content/uploads/2024/07/IMG_2024-07-09-123539.jpeg");
+            background-size: cover; /* Ensures the image stretches to cover the entire screen */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents tiling */
+            height: 100vh; /* Ensures the body is as tall as the viewport */
+            margin: 0; /* Removes default margin to ensure the image covers the screen */
         }
         #game-container {
             display: flex;
@@ -72,22 +78,21 @@
 </head>
 <body>
     <button style="position: absolute; top: 10px; left: 10px; font-family: Arial; font-size: 16px;" onclick="history.back();">Go Back</button>
-    <h1 style="border: 4px solid blue; padding: 10px; font-family: Cursive; font-size: 50px; display: inline-block;">
+    <h1 style="border: 4px solid blue; padding: 10px; font-family: Cursive; font-size: 50px; display: inline-block; background-color: #c2c1c1;">
   <span style="color: blue;">Rivalry</span> 
   <span style="color: red;">Battleship</span>
 </h1>
-    <h5 style="font-style:italic;">Created by Matt Gollihur with help from ChatGPT</h5>
     <div id="game-container">
-        <div>
-            <h2 id="player-board-title" style="color: blue;">Your Board <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/BYU_Stretch_Y_Logo.png" alt="BYU Logo" style="width: 45px;"></h2>
+        <div style="background-color: #c2c1c1; padding: 5px;">
+            <h2 id="player-board-title" style="color: blue; text-align: center;">Your Board <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/BYU_Stretch_Y_Logo.png" alt="BYU Logo" style="width: 45px;"></h2>
             <div id="player-board" class="board"></div>
         </div>
-        <div>
-            <h2 style="color: red;">Computer's Board <img src="https://templates.utah.edu/_main-v3-1/images/template/blocku.svg" alt="BYU Logo" style="width: 30px;"></h2>
+        <div style="background-color: #c2c1c1; padding: 5px;">
+            <h2 style="color: red; text-align: center;">Computer's Board <img src="https://templates.utah.edu/_main-v3-1/images/template/blocku.svg" alt="BYU Logo" style="width: 30px;"></h2>
             <div id="computer-board" class="board"></div>
         </div>
     </div>
-    <div id="ship-placement">
+    <div id="ship-placement" style="background-color: #c2c1c1; padding: 10px;">
         <p style="font-size: 24px">Click anywhere on your board to place your ships.<br>
             <span style="font-size: 12px;">Note: Click "Rotate Ship" button below to change a ship's orientation before placing it on your board.</span> 
         </p>
@@ -95,7 +100,7 @@
         <p id="current-ship"></p>
         <button id="rotate-ship">Rotate Ship</button>
     </div>
-    <div id="status">Place your ships on your board.</div>
+    <div style="background-color: #c2c1c1; padding: 10px;" id="status">Place your ships on your board.</div>
     <button id="start-game">Start Game</button>
     <button id="play-again">Play Again</button>
 
