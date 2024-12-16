@@ -1,11 +1,17 @@
+/*
+Matt Gollihur
+    Section 001
+    12/4/2024
+    */
+
 body {
-    background-color: #ffffff;
+    background-color: #f7e4ba;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .common {
     /* background-color: #cccccc; */
-    border: 2px solid white;
+    border: 2px solid #f7e4ba;
     position: absolute;
 }
 
@@ -17,7 +23,7 @@ body {
     height: 100px;        /* Sets the height of the header */
     z-index: 2;           /* Ensures the header stays on top of other content */
     border-bottom: solid 1px #555555; /* Adds a border at the bottom of the header */
-    background-color: rgb(177, 177, 177);
+    background-color: #e0bf76;
 }
 
 /* .header {
@@ -35,6 +41,7 @@ body {
     width: 100px;
     bottom: 39px;
     z-index: -1;
+    /*color: black*/
     /* padding-top: 40px; */
     /* border-right: solid 1px #555555; */
 }
@@ -42,7 +49,7 @@ body {
 .mainbody {
     top: 114px;
     left: 114px;
-    right: 114px;
+    right: 214px;
     bottom: 39px;
     padding-right: 5px;
 }
@@ -50,7 +57,7 @@ body {
 .rightmenu {
     top: 114px;
     right: 5px;
-    width: 100px;
+    width: 200px;
     bottom: 39px;
     /* border-left: solid 1px #555555; */
     padding-left: 5px;
@@ -66,11 +73,12 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     border-color: black;
-    background-color: rgb(177, 177, 177);
+    background-color: #e0bf76;
     padding-top: 15px;
     position: fixed;
 }
 
 .subheader {
     float: right;
+    margin: 10px;
 }
